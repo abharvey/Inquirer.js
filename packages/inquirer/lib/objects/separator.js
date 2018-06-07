@@ -12,7 +12,7 @@ var figures = require('figures');
 class Separator {
   constructor(line) {
     this.type = 'separator';
-    this.line = chalk.dim(line || new Array(15).join(figures.line));
+    this.line = line || new Array(15).join(figures.line);
   }
 
   /**

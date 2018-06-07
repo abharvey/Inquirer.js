@@ -46,7 +46,7 @@ class Paginator {
     var topIndex = Math.max(0, active + lines.length - this.pointer);
 
     var section = infinite.splice(topIndex, pageSize).join('\n');
-    return section + '\n' + chalk.dim('(Move up and down to reveal more choices)');
+    return section + '\n' + '(Move up and down to reveal more choices)';
   }
 }
 

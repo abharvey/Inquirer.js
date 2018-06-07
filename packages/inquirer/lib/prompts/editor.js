@@ -50,9 +50,9 @@ class EditorPrompt extends Base {
     var message = this.getQuestion();
 
     if (this.status === 'answered') {
-      message += chalk.dim('Received');
+      message += 'Received';
     } else {
-      message += chalk.dim('Press <enter> to launch your preferred editor.');
+      message += 'Press <enter> to launch your preferred editor.';
     }
 
     if (error) {

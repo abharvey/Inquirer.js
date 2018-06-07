@@ -135,9 +135,9 @@ class Prompt {
     if (this.opt.default != null && this.status !== 'answered') {
       // If default password is supplied, hide it
       if (this.opt.type === 'password') {
-        message += chalk.italic.dim('[hidden] ');
+        message += chalk.italic('[hidden] ');
       } else {
-        message += chalk.dim('(' + this.opt.default + ') ');
+        message += '(' + this.opt.default + ') ';
       }
     }
 

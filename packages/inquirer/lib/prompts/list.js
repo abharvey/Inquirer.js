@@ -82,7 +82,7 @@ class ListPrompt extends Base {
     var message = this.getQuestion();
 
     if (this.firstRender) {
-      message += chalk.dim('(Use arrow keys)');
+      message += '(Use arrow keys)';
     }
 
     // Render choices or answer depending on the state

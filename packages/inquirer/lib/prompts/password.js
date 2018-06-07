@@ -61,11 +61,11 @@ class PasswordPrompt extends Base {
     if (this.status === 'answered') {
       message += this.opt.mask
         ? chalk.cyan(mask(this.answer, this.opt.mask))
-        : chalk.italic.dim('[hidden]');
+        : chalk.italic('[hidden]');
     } else if (this.opt.mask) {
       message += mask(this.rl.line || '', this.opt.mask);
     } else {
-      message += chalk.italic.dim('[input is hidden] ');
+      message += chalk.italic('[input is hidden] ';
     }
 
     if (error) {
